@@ -9,6 +9,14 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+about {
+  font-size: 20px;
+}
+
+intro {
+  font-size: 20px;
+}
+
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway"; /* OPTIONAL: Google Fonts - title font */
@@ -25,6 +33,26 @@ p {
 
 .centered {
     text-align: center;
+}
+
+.button {
+
+  transition-duration: 0.4s;
+  background-color: #1072d3; /* light blue */
+  border: 2px solid black;
+  border-radius: 10px;
+  color: white;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+
+}
+
+.button:hover {
+  background-color: green;
+  color: white;
 }
 
 /* Links */
@@ -115,13 +143,12 @@ a:after {
   color: white;
 } 
 
-.about h5, p {
+.about h5 {
   color: white;
 }
 
 .about i {
   color: white;
-  font-size: 20px;
   padding-right: 8px;
   vertical-align: middle;
 }
