@@ -32,26 +32,32 @@
 
     </head>
     <body>
-
+        <nav>
+            <ul>
+                <li><a href="#section1">About</a></li>
+                <li><a href="#section2">Education</a></li>
+                <li><a href="#section3">Projects</a></li>
+                <li><a href="#section4">Work</a></li>
+                <li><a href="#section5">Contact Me</a></li>
+            </ul>
+        </nav>
+       
         <div class="header" id="headerwrap">
             <div class="container">
             </div>
-        </div>
 
-        <section id="intro" name="intro"></section>
-            <div class="container desc">
-                <div class="row" class="intro animated fadeInUp">
-                    <div class="col-lg-2 col-lg-offset-1">
-                        <h5><t>INTRO</t></h5>
-                    </div>
-                    <div class="col-lg-6">
-                        <h1 class="row centered animated fadeInUp"><t style="font-size: 24px">Omar Lucero</t></h1>
-                        <h3 class="row centered animated fadeInUp">Software Engineer |
-                            <a href="mailto:omar4names@gmail.com">omar4names@gmail.com</a>
-                        </h3>
+            <section id="intro" name="intro">
+                <div class="container desc">
+                    <div class="row intro animated fadeInUp">
+                        <div class="col-lg-12 text-center">
+                            <h1 class="row centered animated fadeInUp"><t style="font-size: 24px; color: white">Omar Lucero</t></h1>
+                            <h3 class="row centered animated fadeInUp">Software Engineer |
+                                <a href="mailto:omar4names@gmail.com">omar4names@gmail.com</a>
+                            </h3>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
 
         <section id="about" name="about"></section>
@@ -59,7 +65,7 @@
                 <div class="container desc">
                     <div class="row">
                         <div class="col-lg-2 col-lg-offset-1">
-                            <h5><t style="color: white">ABOUT</t></h5>
+                            <h5><t style="color: white"><a id="section1">ABOUT</a></t></h5>
                          </div>
                         <div class="col-lg-6">
                             <p style="color: white">Hi, my name is Omar Lucero and I am a Computer Science major studying at 
@@ -69,7 +75,7 @@
                             </p>
                         </div>
                         <div class="col-lg-3">
-                            <p><a href="https://olucero13.github.io/Resume_Lucero_O.pdf" target="_blank" class="button"><i class="icon-file"></i> DOWNLOAD PDF </a></p>
+                            <p><a href="https://olucero13.github.io/Resume_Lucero_O.pdf" target="_blank" class="button"><i class="icon-file"></i> DOWNLOAD CV </a></p>
                         </div>
                     </div>
                 </div>
@@ -82,7 +88,7 @@
                 <div class="row">
 
                         <div class="col-lg-2 col-lg-offset-1">
-                            <h5><t>EDUCATION</t></h5>
+                            <h5><t><a id="section2">EDUCATION</a></t></h5>
                         </div>
                         <!-- bachelor's degree -->
                         <div class="col-lg-6">
@@ -96,7 +102,7 @@
                             <imp><sm>IN PROGRESS</sm></imp>
                             </p>
                         </div>
-
+                         
                         <!-- Classes -->
                         <div class="col-lg-6 col-lg-offset-3">
                             <h5><p><t>Classes Taken:</t></p></h5>
@@ -114,22 +120,64 @@
 
                         <!-- Technical Skills -->
                         <div class="col-lg-6 col-lg-offset-3">
-                            <h5><p><t>Technical Skills:</t></p></h5>
-                                <p>C++, C, Python, Git, HTML5, CSS, JavaScript, Prolog, Haskell, Dart</p>
-                                <p>Worked with Linux, Remote Repositories (Git), Flutter (Android Studio) and Remote Systems (DeterLab).</p>
-                                <p>Google Workspace/G-Suite, Mircosoft Office 365 (Excel, Word, PowerPoint), Github.</p>
-                        </div>
-                </div>
+                        <section id="skills" name="skills">
+                            <div class="container desc">
+                               <div class="row">
+                                   <h5>Skills</h5>
+                                    <div class="col-lg-6">
+                                        <ul class="skills-list">
+                                            <li>
+                                                <span class="skill-name">C++</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar cpp" data-progress="85%"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="skill-name">Python</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar python" data-progress="50%"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="skill-name">HTML</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar html" data-progress="70%"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="skill-name">CSS</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar css" data-progress="65%"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="skill-name">C</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar c" data-progress="80%"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="skill-name">MS Suite</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar mssuite" data-progress="95%"></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 <br>
                 <hr>
             </div>
 
-            <!-- Projects Section -->
+         <!-- Projects Section -->
             <div class="container desc">
                 <div class="row">
 
                         <div class="col-lg-2 col-lg-offset-1">
-                            <h5>Projects</h5>
+                            <h5><a id="section3">Projects</a></h5>
                         </div>
 
                         <!-- Resume Website -->
@@ -171,12 +219,11 @@
                 <hr>
             </div>
 
-
             <!-- WORK SECTION -->
             <div class="container desc">
                 <div class="row">
                         <div class="col-lg-2 col-lg-offset-1">
-                            <h5>WORK</h5>
+                            <h5><a id="section4">WORK</a></h5>
                         </div>
                         
                         <!-- Jolly's -->
@@ -217,7 +264,7 @@
                         <div class="row">
 
                                 <div class="col-lg-2 col-lg-offset-1">
-                                    <h5>CONTACT</h5>
+                                    <h5><a id="section5">CONTACT</a></h5>
                                 </div>
 
                                 <!-- EMAIL -->
@@ -251,6 +298,31 @@
                         </div>
                     </div>
                 </div>
+
+
+              <script>
+                    window.addEventListener("scroll", function () {
+                        const navigation = document.querySelector("nav");
+                        if (window.scrollY > 0) {
+                            navigation.classList.add("shadow-on-scroll");
+                        } else {
+                            navigation.classList.remove("shadow-on-scroll");
+                        }
+                    });
+
+                    function animateProgressBars() {
+                        const progressBars = document.querySelectorAll(".progress-bar[data-progress]");
+
+                        progressBars.forEach((progressBar) => {
+                            const progress = progressBar.getAttribute("data-progress");
+                            progressBar.style.width = progress;
+                        });
+                    }
+
+                    window.addEventListener("load", animateProgressBars);
+
+
+              </script> 
 
     </body>
 </html>

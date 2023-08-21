@@ -1,3 +1,7 @@
+.intro h1 {
+  color: white;
+}
+
 body {
   background-color: #f2f2f2;
   font-family: "Lato"; /* OPTIONAL: Google Fonts - base font */
@@ -10,10 +14,6 @@ body {
 }
 
 about {
-  font-size: 20px;
-}
-
-intro {
   font-size: 20px;
 }
 
@@ -121,18 +121,19 @@ a:after {
 .header h1 {
   font-size: 80px;
   color: white;
-  background: rgba(0,0,0,0.2);
+  text-align: center;
+  
 }
 
 .header h3 {
   font-size: 20px;
   color: white;
-  background: rgba(0,0,0,0.2);
+
 }
 
 .header h3 a {
   color: white;
-  background: rgba(0,0,0,0.2);
+  
 }
 
 /* About Wrap */
@@ -333,4 +334,92 @@ body {
   -moz-animation-name: fadeInUp;
   -o-animation-name: fadeInUp;
   animation-name: fadeInUp;
+  }
+
+
+  /* style nav (tabs at top) */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: black;
+    border-bottom: 5px solid #666;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin: 0;
+    border-bottom: none;
+    background-color: black;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+
+  .progress-bar.cpp {
+    background-color: red;
+  }
+  
+  .progress-bar.python {
+    background-color: blue;
+  }
+  
+  .progress-bar.html {
+    background-color: green;
+  }
+  
+  .progress-bar.css {
+    background-color: orange;
+  }
+  
+  .progress-bar.c {
+    background-color: purple;
+  }
+  
+  .progress-bar.mssuite {
+    background-color: cyan;
+  }
+
+  .progress {
+    width: 100%;
+    height: 15px;
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .progress-bar {
+    height: 100%;
+    background-color: #1072d3;
+    width: 0;
+    transition: width 1s ease-in-out;
+  }
+
+  .skills-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .skill-name {
+    font-weight: bold;
+  }
+
+  .animated-progress {
+    width: 100%;
+  }
+
+  .progress-bar[data-progress] {
+    width: 0;
   }
