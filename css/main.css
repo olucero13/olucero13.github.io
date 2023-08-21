@@ -15,6 +15,25 @@ body {
 
 about {
   font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about-image {
+  height: 150px;
+  width: 150px;
+  background-image: url(/Users/omarlucero/ResumeWebsite/olucero13.github.io/images/portrait.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.about-text {
+  flex-grow: 1;
 }
 
 /* Titles */
