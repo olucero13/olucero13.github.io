@@ -23,7 +23,7 @@ about {
 .about-image {
   height: 150px;
   width: 150px;
-  background-image: url(/Users/omarlucero/ResumeWebsite/olucero13.github.io/images/portrait.jpg);
+  background-image: url(images/portrait.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 50%;
