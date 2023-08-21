@@ -106,7 +106,7 @@
                 <div class="row">
 
                         <div class="col-lg-2 col-lg-offset-1">
-                            <h5><t><a id="section2">EDUCATION</a></t></h5>
+                            <h5><t><a id="section2"><t style="color: black">EDUCATION</a></t></style></h5>
                         </div>
                         <!-- bachelor's degree -->
                         <div class="col-lg-6">
@@ -195,42 +195,86 @@
                 <div class="row">
 
                         <div class="col-lg-2 col-lg-offset-1">
-                            <h5><a id="section3">Projects</a></h5>
+                            <h5><a id="section3"><t style="color: black">Projects</t></a></h5>
                         </div>
+
+                         <!-- Slideshow container -->
+                    <div class="slideshow-container fade">
+
+                        <!-- Full images with numbers and message Info -->
+                        <div class="Containers">
+                            <div class="MessageInfo">1 / 5</div>
+                            <img src="https://olucero13.github.io/images/website.png" style="width:100%">
+                            <div class="Info">I built this website from scratch to hold my resume and <br/>
+                                show off my web development skills.</div>
+                        </div>
+  
+                        <div class="Containers">
+                            <div class="MessageInfo">2 / 5</div>
+                            <img src="https://olucero13.github.io/images/namer.png" style="width:100%">
+                            <div class="Info">Built an android app that gives the user a random name.</div>
+                        </div>
+  
+                        <div class="Containers">
+                            <div class="MessageInfo">3 / 5</div>
+                            <img src="https://olucero13.github.io/images/pagereplacement.png" style="width:100%">
+                            <div class="Info">Wrote a program that counts the number of page faults </br>
+                                using both FIFO and LIFO, with 5 different frame numbers of 3-7, using 100 numbers.</div>
+                        </div>
+
+                        <div class="Containers">
+                            <div class="MessageInfo">4 / 5</div>
+                            <img src="https://olucero13.github.io/images/binarytree.png" style="width:100%">
+                            <div class="Info">Wrote a program that prints all of the nodes within a binary tree, returns the </br>
+                                size and height of the tree, shows whether or not it is a complete binary tree, </br>
+                                and prints the nodes in order with inorder traversal after the conversion from a binary tree to a binary search tree.</div>
+                        </div>
+
+                        <div class="Containers">
+                            <div class="MessageInfo">5 / 5</div>
+                            <img src="https://olucero13.github.io/images/postfix.jpg" style="width:100%">
+                            <div class="Info">Wrote a program that evaluates postfix expressions when entered character by character and outputs the entered inputs in a </br>
+                                single line with the result beneath it.</div>
+                        </div>
+  
+                        <!-- Back and forward buttons -->
+                        <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+  
+                    <!-- The circles/dots -->
+                    <div style="text-align:center">
+                        <span class="dots" onclick="currentSlide(1)"></span>
+                        <span class="dots" onclick="currentSlide(2)"></span>
+                        <span class="dots" onclick="currentSlide(3)"></span>
+                        <span class="dots" onclick="currentSlide(4)"></span>
+                        <span class="dots" onclick="currentSlide(5)"></span>
+                    </div> 
 
                         <!-- Resume Website -->
                         <div class="col-lg-6">
                             <p class="tight"><t>This Website</t></p>
-                                <p><more>I built this website from scratch to hold my resume and <br/>
-                                show off my web development skills. </more></p>
                         </div>
                         
                         <!-- Namer App -->
                         <div class="col-lg-6 col-lg-offset-3">
                             <p class="tight"><t>Namer App</t></p>
-                                <p><more>Built an android app that gives the user a random name.</more></p>
                         </div>
 
                         <!-- Virtual Memory -->
                         <div class="col-lg-6 col-lg-offset-3">
                             <p class="tight"><t>Page Replacement Algorithms </t></p>
-                                <p><more>Wrote a program that counts the number of page faults </br>
-                                    using both FIFO and LIFO, with 5 different frame numbers of 3-7, using 100 numbers.</more></p>
                         </div>
 
                         <!-- Tree Traversal -->
                         <div class="col-lg-6 col-lg-offset-3">
                             <p class="tight"><t>Binary Tree Traversal</t></p>
-                                <p><more>Wrote a program that prints all of the nodes within a binary tree, returns the </br>
-                                    size and height of the tree, shows whether or not it is a complete binary tree, </br>
-                                    and prints the nodes in order with inorder traversal after the conversion from a binary tree to a binary search tree.</more></p>
                         </div>
 
                         <!-- Postfix Expression Evalutor -->
                         <div class="col-lg-6 col-lg-offset-3">
                             <p class="tight"><t>Postfix Expression Evaluator</t></p>
-                                <p><more>Wrote a program that evaluates postfix expressions when entered character by character and outputs the entered inputs in a </br>
-                                    single line with the result beneath it.</more></p>
                         </div>
                 </div>
                 <br>
@@ -241,7 +285,7 @@
             <div class="container desc">
                 <div class="row">
                         <div class="col-lg-2 col-lg-offset-1">
-                            <h5><a id="section4">WORK</a></h5>
+                            <h5><a id="section4"><t style="color: black">WORK</t></a></h5>
                         </div>
                         
                         <!-- Jolly's -->
@@ -352,6 +396,21 @@
    
                             document.getElementById("navbar").style.background = "none";
                         }
+                    }
+                    
+                    var slidePosition = 0;
+                    SlideShow();
+
+                    function SlideShow(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("Containers");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slidePosition++;
+                        if (slidePosition > slides.length) {slidePosition = 1}
+                        slides[slidePosition-1].style.display = "block";
+                        setTimeout(SlideShow, 2000); // Change image every 2 seconds
                     }
 
               </script> 
