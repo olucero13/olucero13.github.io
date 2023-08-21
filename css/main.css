@@ -1,5 +1,6 @@
 .intro h1 {
   color: white;
+  font-size: 44px;
 }
 
 body {
@@ -118,7 +119,7 @@ a:after {
 /* Header Wrap */
 .header {
   background: #3D9970;
-  background: url(../images/header-mypick.jpg) no-repeat center top;
+  background: url(/Users/omarlucero/ResumeWebsite/olucero13.github.io/images/possiblepic.jpg) no-repeat center top;
   padding-top:140px;
   text-align:center;
   background-attachment: relative;
